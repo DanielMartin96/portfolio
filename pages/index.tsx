@@ -4,13 +4,7 @@ import Footer from "../components/organisms/Footer";
 import Navbar from "../components/organisms/Navbar";
 
 const Home: NextPage = () => {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Footer />
-    </>
-  );
+  return <Hero />;
 };
 
 export default Home;
