@@ -7,4 +7,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  typescript: { reactDocgen: false },
 };
