@@ -8,11 +8,11 @@ type LayoutProps = {
 
 const Layout: FC<LayoutProps> = ({ children }): ReactElement => {
   return (
-    <>
+    <div className="flex flex-col h-screen justify-between">
       <Navbar />
       {children}
       <Footer />
-    </>
+    </div>
   );
 };
 
