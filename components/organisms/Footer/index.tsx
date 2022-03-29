@@ -9,9 +9,11 @@ const Footer = () => {
       <p className="py-2 text-white sm:py-0">All rights reserved</p>
       <div className="flex -mx-2">
         <a
-          href="#"
+          href="https://www.github.com/DanielMartin96"
           className="mx-2 text-gray-300 hover:text-gray-300"
           aria-label="Github"
+          target="_blank"
+          rel="noreferrer"
         >
           <svg
             className="w-5 h-5 fill-current"

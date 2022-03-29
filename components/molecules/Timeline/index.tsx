@@ -4,7 +4,7 @@ import TimelineItem from "../../atoms/TimelineItem";
 
 const Timeline = () => {
   return (
-    <ol className="items-center sm:flex">
+    <ol className="items-center sm:flex w-full">
       {EXPERIENCE.map((item) => (
         <TimelineItem
           key={item.title}

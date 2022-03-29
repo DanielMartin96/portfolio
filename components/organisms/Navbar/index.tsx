@@ -33,7 +33,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className={`${open ? "block" : "hidden"} items-center md:flex`}>
-          <div className="flex flex-col items-center md:flex-row md:mx-6">
+          <div className="flex flex-col sm:items-center md:flex-row md:mx-6">
             {NAV_LINKS.map((link) => (
               <Link href={`/${link.toLowerCase()}`} key={link}>
                 <a className="my-1 text-sm font-medium text-gray-200 transition-colors duration-200 transform hover:text-gray-300 md:mx-4 md:my-0">
@@ -41,7 +41,15 @@ const Navbar = () => {
                 </a>
               </Link>
             ))}
-            <button className="px-4 py-2 font-medium tracking-wide text-gray-800 capitalize transition-colors duration-200 transform bg-white rounded-md hover:bg-gray-400 focus:outline-none focus:ring focus:ring-gray-800  focus:ring-opacity-80">
+            <button
+              className="px-4 py-2 font-medium tracking-wide text-gray-800 capitalize transition-colors duration-200 transform bg-white rounded-md hover:bg-gray-400 focus:outline-none focus:ring focus:ring-gray-800  focus:ring-opacity-80"
+              onClick={() =>
+                window.open(
+                  "https://docs.google.com/document/d/1F0Rrg1svgH0tdzbOYvG3uWtT7WiZaTe4bkpqstEP7Ok/edit?usp=sharing",
+                  "_blank"
+                )
+              }
+            >
               Resume
             </button>
           </div>
